@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.footer{
+text-align: center;
+background-color :forestgreen;
+height:40px;
+}
+.header{
+text-align: center;
+background-color :aqua;
+height:40px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+ 
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (min-width: 600px) {
+  
+
+}
+</style>
+</head>
+<body>
+
+<div class="header"> header</div>
+ <div class="s"> column1</div>
+ <div class="s"> column2</div>
+ <div class="s"> column3</div>
+<div class="row">
+  <div id ="first" class="column" style="background-color:#aaa;">
+    <h4>Column 1</h4>
+    
+  </div>
+  <div id="sec" class="column" style="background-color:#bbb;">
+    <h4>Column 2</h4>
+    
+  </div>
+  <div id= "third"class="column" style="background-color:#ccc;">
+    <h4>Column 3</h4>
+    
+  </div>
+</div>
+<div class="footer"> footer </div>
+</body>
+</html>
